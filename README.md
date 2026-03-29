@@ -1,69 +1,174 @@
-# React + TypeScript + Vite
+# 🎫 Eventify Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Eventify Frontend is a web application for browsing events, registering users, and managing personal event participation.
+It works together with the Eventify API backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Stack
 
-## Expanding the ESLint configuration
+- **React** — UI library
+- **Vite** — build tool
+- **TypeScript** — type safety
+- **React Router** — routing
+- **SCSS** — styling
+- **Storybook** — UI component documentation
+- **react-cookie-consent** — GDPR cookie banner
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Project Launch
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+```bash
+# 1. Install dependencies
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 2. Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+App will be available at:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+http://localhost:5173
+```
+
+---
+
+## 📜 Available Scripts
+
+### Development
+
+```bash
+npm run dev
+```
+
+Starts the development server with hot reload.
+
+---
+
+### Build
+
+```bash
+npm run build
+```
+
+Builds the project for production into the `dist` folder.
+
+---
+
+### Preview build
+
+```bash
+npm run preview
+```
+
+Runs a local server to preview the production build.
+
+---
+
+### Lint
+
+```bash
+npm run lint
+```
+
+Runs ESLint to check code quality and formatting issues.
+
+---
+
+### Storybook (UI components)
+
+Run Storybook:
+
+```bash
+npm run storybook
+```
+
+Build static Storybook:
+
+```bash
+npm run build-storybook
+```
+
+---
+
+## 🔗 Backend Connection
+
+This project works with the Eventify API backend.
+
+Make sure backend is running at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📄 Available Pages
+
+- `/` — Events list
+- `/events/:id` — Event details
+- `/login` — User login
+- `/register` — User registration
+- `/privacy-policy` — Privacy Policy
+- `/terms` — Terms of Use
+
+---
+
+## 🍪 Cookie Consent (GDPR)
+
+The application includes a cookie consent banner shown on first visit.
+
+Features:
+
+- Accept / Decline cookies
+- Stores user preference
+- Links to Privacy Policy
+
+---
+
+## 📚 Storybook
+
+Storybook is used for UI component development and documentation.
+
+Run Storybook:
+
+```bash
+npm run storybook
+```
+
+Build static Storybook:
+
+```bash
+npm run build-storybook
+```
+
+---
+
+## 🧩 Components
+
+Documented in Storybook:
+
+### Button
+
+- Variants: primary, secondary, tertiary, danger
+- States: loading, disabled
+
+### Input
+
+- States: default, error, success, disabled
+- Supports label, hint, and validation messages
+
+---
+
+## 📜 Legal
+
+- Privacy Policy: `/privacy-policy`
+- Terms of Use: `/terms`
+
+---
+
+## 👨‍💻 Author
+
+Bohdan Stetsiuk
