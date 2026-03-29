@@ -25,3 +25,6 @@ Thumbs.db
 
 # testing
 coverage/
+
+*storybook.log
+storybook-static
