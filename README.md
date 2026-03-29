@@ -122,7 +122,7 @@ npm  run  build-storybook
 
 ## 🔗 Backend Connection
 
-This project works with the [Eventify API backend](https://github.com/your-username/eventify-backend).
+This project works with the [Eventify API backend](https://github.com/r4dulf/eventify-backend).
 
 Make sure backend is running at:
 
@@ -146,7 +146,7 @@ http://localhost:3000
 
 - `/privacy-policy` — Privacy Policy
 
-- `/terms` — Terms of Use
+- `/terms-of-use` — Terms of Use
 
 ---
 
@@ -208,7 +208,7 @@ Documented in Storybook:
 
 - Privacy Policy: `/privacy-policy`
 
-- Terms of Use: `/terms`
+- Terms of Use: `/terms-of-use`
 
 ---
 
